@@ -6,7 +6,7 @@ scissors = "Scissors"
 win_counter = 0
 lose_counter = 0
 while True:
-    player_move = input("Choose [r]ock, [p]aper, [s]cissors: ")
+    player_move = input("Choose [r] for rock, [p] for paper, [s] for scissors: ")
     if player_move == "r":
         player_move = rock
     elif player_move == "p":
@@ -14,7 +14,8 @@ while True:
     elif player_move == "s":
         player_move = scissors
     else:
-        exit("Invalid input. Try again!")
+        print("Invalid input. Try again!")
+        continue
 
     computer_random_number = random.randint(1, 3)
     computer_move = ""
